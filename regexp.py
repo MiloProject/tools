@@ -7,5 +7,5 @@ def teste(regexp, phrase):
   else:
     print("NOPE")
     
-if __nhame__ == "__main__":
+if __name__ == "__main__":
   teste(input("REGEXP > "), input("TEST > "))
