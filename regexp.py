@@ -2,10 +2,11 @@
 import re
 
 def teste(regexp, phrase):
-  if re.match(regexp, phrase):
-    print("MATCH")
-  else:
-    print("NOPE")
-    
+    prog = re.compile(regexp)
+    if prog.match(phrase):
+        print("MATCH")
+    else:
+        print("NOPE")
+
 if __name__ == "__main__":
-  teste(input("REGEXP > "), input("TEST > "))
+    teste(input("REGEXP > "), input("TEST > "))
